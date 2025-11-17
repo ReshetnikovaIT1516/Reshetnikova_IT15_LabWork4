@@ -46,6 +46,9 @@ public class NumberCollecting implements Collecting<Integer, Map<String, List<In
             key = "нули";
         }
 
-        collection.computeIfAbsent(key, k -> new ArrayList<>()).add(element);
+        if (!collection.containsKey(key)) {
+            collection.put(key, new ArrayList<>());
+        }
+        collection.get(key).add(element);
     }
 }

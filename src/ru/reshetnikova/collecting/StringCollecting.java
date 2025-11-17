@@ -38,6 +38,9 @@ public class StringCollecting implements Collecting<String, Map<Integer, List<St
     @Override
     public void collect(Map<Integer, List<String>> collection, String element) {
         int length = element.length();
-        collection.computeIfAbsent(length, k -> new ArrayList<>()).add(element);
+        if (!collection.containsKey(length)) {
+            collection.put(length, new ArrayList<>());
+        }
+        collection.get(length).add(element);
     }
 }
