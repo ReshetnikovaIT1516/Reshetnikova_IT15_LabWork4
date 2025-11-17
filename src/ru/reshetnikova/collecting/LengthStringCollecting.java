@@ -36,6 +36,10 @@ public class LengthStringCollecting implements Collecting<String, Map<String, Lo
 
     @Override
     public void collect(Map<String, Long> collection, String element) {
-        collection.put(element, collection.getOrDefault(element, 0L) + 1);
+        if (!collection.containsKey(element)) {
+            collection.put(element, 1L);
+        } else {
+            collection.put(element, collection.get(element) + 1);
+        }
     }
 }

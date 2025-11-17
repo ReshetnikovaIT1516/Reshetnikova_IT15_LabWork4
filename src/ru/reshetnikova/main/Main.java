@@ -42,6 +42,7 @@ public class Main {
                         System.out.println("2.Взять объект из коробки. ");
                         System.out.println("3.Посмотреть содержимое коробки. ");
                         System.out.println("0.Завершить действия с коробкой. ");
+                        System.out.println("Введите номер действия: ");
                         m1 = scanner.nextInt();
                         scanner.nextLine();
                         switch (m1) {
@@ -77,10 +78,10 @@ public class Main {
                     System.out.println("Задача 1.3: Сравнимое.");
                     int m2;
                     do {
-                        System.out.println("Введите номер действия: ");
                         System.out.println("1.Сравнить два числа. ");
                         System.out.println("2.Сравнить две строки. ");
                         System.out.println("0.Завершить программу для сравнения. ");
+                        System.out.println("Введите номер действия: ");
 
                         m2 = scanner.nextInt();
                         scanner.nextLine();
@@ -137,11 +138,11 @@ public class Main {
                     List<GeneralizedBox<? extends Number>> numberBoxes = new ArrayList<>();
                     int m3;
                     do {
-                        System.out.println("Введите номер действия: ");
                         System.out.println("1. Добавить коробку с числом");
                         System.out.println("2. Найти максимальное значение");
                         System.out.println("3. Показать все коробки");
                         System.out.println("0. Завершить поиск максимума");
+                        System.out.println("Введите номер действия: ");
 
                         m3 = scanner.nextInt();
                         scanner.nextLine();
@@ -175,11 +176,11 @@ public class Main {
                     System.out.println("Задача 3.1: Функция.");
                     int m4;
                     do {
-                        System.out.println("Введите номер действия: ");
                         System.out.println("1.Применить функцию к строкам (длина).");
                         System.out.println("2.Применить функцию к числам (модуль).");
                         System.out.println("3.Применить функцию к массивам (максимум).");
                         System.out.println("0.Завершить работу программы.");
+                        System.out.println("Введите номер действия: ");
 
                         m4 = scanner.nextInt();
                         scanner.nextLine();
@@ -217,11 +218,11 @@ public class Main {
                     System.out.println("Задача 3.2: Фильтр. ");
                     int m5;
                     do {
-                        System.out.println("Введите номер действия: ");
                         System.out.println("1. Фильтр строк (длина >= 3)");
                         System.out.println("2. Фильтр чисел (не больше 0)");
                         System.out.println("3. Фильтр массивов (отрицательные)");
                         System.out.println("0. Завершить работу с фильтром");
+                        System.out.println("Введите номер действия: ");
 
                         m5 = scanner.nextInt();
                         scanner.nextLine();
@@ -260,11 +261,11 @@ public class Main {
                     System.out.println("Задача 3.3: Сокращение.");
                     int m6;
                     do {
-                        System.out.println("Введите номер действия: ");
                         System.out.println("1. Сократить строки.");
                         System.out.println("2. Сократить числа.");
                         System.out.println("3. Сократить массивы.");
                         System.out.println("0. Завершить работу программы");
+                        System.out.println("Введите номер действия: ");
 
                         m6 = scanner.nextInt();
                         scanner.nextLine();
@@ -302,11 +303,11 @@ public class Main {
                     System.out.println("Задача 3.4: Коллекционирование. ");
                     int m7;
                     do {
-                        System.out.println("Введите номер действия: ");
                         System.out.println("1. Коллекционирование строк (подсчет вхождений)");
                         System.out.println("2. Коллекционирование чисел (разбиение на положительные/отрицательные/нули)");
                         System.out.println("3. Коллекционирование строк по длине");
                         System.out.println("0. Завершить работу программы");
+                        System.out.println("Введите номер действия: ");
 
                         m7 = scanner.nextInt();
                         scanner.nextLine();
