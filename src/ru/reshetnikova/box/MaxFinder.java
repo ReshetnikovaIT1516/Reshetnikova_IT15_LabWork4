@@ -4,7 +4,6 @@ import java.util.List;
 public class MaxFinder {
 
     public static double findMax(List<? extends GeneralizedBox<? extends Number>> boxes) {
-        // Проверяем, что список не пустой
         if (boxes == null) {
             throw new IllegalArgumentException("Список коробок не может быть null.");
         }
@@ -12,8 +11,8 @@ public class MaxFinder {
             throw new IllegalArgumentException("Список коробок пустой.");
         }
 
-        double maxValue = -Double.MAX_VALUE; // Начальное значение
-        boolean foundNumber = false; // Указатель что нашли хотя бы одно число
+        double maxValue = -Double.MAX_VALUE; // начальное значение
+        boolean foundNumber = false; // есть хотя бы одно число
 
 
         for (int i = 0; i < boxes.size(); i++) {
