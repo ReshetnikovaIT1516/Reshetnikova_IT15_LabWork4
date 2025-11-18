@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Function3_1 {
 
-    public static <T, R> List<R> apply(List<T> list, Function<T, R> function) {
+    public static <T, P> List<P> apply(List<T> list, Function<T, P> function) {
         if (list == null) {
             throw new IllegalArgumentException("Список не может быть null");
         }
@@ -13,13 +13,13 @@ public class Function3_1 {
             throw new IllegalArgumentException("Функция не может быть null");
         }
 
-        List<R> result = new ArrayList<>();
+        List<P> result = new ArrayList<>();
         for (T item : list) {
             result.add(function.apply(item));
         }
         return result;
     }
-    public static <T, R> List<R> applyFunction(List<T> list, Function<T, R> function) {
+    public static <T, P> List<P> applyFunction(List<T> list, Function<T, P> function) {
         return apply(list, function);
     }
 }
